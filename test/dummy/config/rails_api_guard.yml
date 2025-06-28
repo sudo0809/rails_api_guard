@@ -1,0 +1,9 @@
+excluded_patterns:
+  - "/healthcheck"
+  - "/public/*"
+  - "^/user/\\d+/document/\\w+$"
+
+
+limit: 5
+expiry_time: 60
+slack_webhook_url: ENV[SLACK_WEBHOOK_URL]
