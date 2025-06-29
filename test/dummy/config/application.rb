@@ -8,6 +8,8 @@ Bundler.require(*Rails.groups)
 
 module Dummy
   class Application < Rails::Application
+    config.paths.add "#{Rails.root}/../../lib", eager_load: true
+
     config.load_defaults Rails::VERSION::STRING.to_f
 
     # For compatibility with applications that use this config

@@ -1,19 +1,18 @@
 # RailsApiGuard
-Short description and motivation.
 
-## Usage
-How to use my plugin.
+A pluggable, configurable rate limiting middleware for Rails APIs with Redis backend, Slack alerts, and endpoint exclusions.
 
-## Installation
+## 🚀 Installation
+
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "rails_api_guard"
+gem 'rails_api_guard'
 ```
 
 And then execute:
 ```bash
-$ bundle
+$ bundle install
 ```
 
 Or install it yourself as:
@@ -21,8 +20,16 @@ Or install it yourself as:
 $ gem install rails_api_guard
 ```
 
+## Generate the Initializer
+```bash
+rails generate rails_api_guard:install
+```
+
+## Configuration
+Edit `config/initializers/rails_api_guard.rb` to set request limits, expiry time, Slack alerts, and excluded endpoint patterns.
+
 ## Contributing
-Contribution directions go here.
+Contribution directions are yet to add.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

@@ -5,7 +5,7 @@ gem 'sqlite3', '~> 1.4'
 gem 'puma'
 
 # Include your engine gem from local path:
-gem 'rails_api_guard', path: '../../'
+gem 'rails_api_guard',  path: '../../..'
 
 # Other dependencies as needed, e.g. sprockets-rails:
 gem 'sprockets-rails'
