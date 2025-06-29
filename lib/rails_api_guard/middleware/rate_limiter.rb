@@ -1,6 +1,3 @@
-require "pry"
-
-
 module RailsApiGuard
     module Middleware
         class RateLimiter
