@@ -25,6 +25,12 @@ $ gem install rails_api_guard
 rails generate rails_api_guard:install
 ```
 
+## Middleware
+Add this to application.rb if not used generator
+```ruby
+config.middleware.use RailsApiGuard::Middleware::RateLimiter
+```
+
 ## Configuration
 Edit `config/initializers/rails_api_guard.rb` to set request limits, expiry time, Slack alerts, and excluded endpoint patterns.
 
