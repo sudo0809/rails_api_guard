@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.1] - 2025-06-29
+### Added
+- Auto addition of Middleware to application.rb file
+
 ## [0.2.0] - 2025-06-29
 ### Added
 - Default configuration support.

@@ -8,6 +8,10 @@ Bundler.require(*Rails.groups)
 
 module Dummy
   class Application < Rails::Application
+
+    # Added by RailsApiGuard gem to apply API rate limiting middleware
+    config.middleware.use RailsApiGuard::Middleware::RateLimiter
+
     config.paths.add "#{Rails.root}/../../lib", eager_load: true
 
     config.load_defaults Rails::VERSION::STRING.to_f
@@ -27,7 +31,5 @@ module Dummy
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-
-    config.middleware.use RailsApiGuard::Middleware::RateLimiter
   end
 end
