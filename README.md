@@ -34,6 +34,20 @@ config.middleware.use RailsApiGuard::Middleware::RateLimiter
 ## Configuration
 Edit `config/initializers/rails_api_guard.rb` to set request limits, expiry time, Slack alerts, and excluded endpoint patterns.
 
+## Slack Notifications
+
+RailsApiGuard can optionally send Slack alerts whenever a request exceeds the defined rate limit threshold.
+
+### Configuration
+
+To enable Slack alerts, set your Slack webhook URL in the initializer:
+
+```ruby
+# config/initializers/rails_api_guard.rb
+RailsApiGuard.configure do |config|
+  config.slack_webhook_url = ENV["SLACK_WEBHOOK_URL"]
+end
+
 ## Contributing
 Contribution directions are yet to add.
 
