@@ -2,7 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.2.1] - 2025-06-29
+## [0.2.2] - 2025-07-05
+### Added
+- Alert message when Slack is not configured
+
+## [0.2.1] - 2025-06-30
 ### Added
 - Auto addition of Middleware to application.rb file
 
